@@ -1,0 +1,30 @@
+.homeContainer {
+  margin-top: 2px;
+  width: 98%;
+  height: 64em;
+  padding-left: 2%;
+  background-color: black;
+  display: flex;
+}
+.homecomp__title {
+  margin-top: 1em;
+  margin-left: 48%;
+  color: white;
+  font-size: 2em;
+}
+.homeElement {
+  margin-top: 3px;
+  margin-bottom: 0%;
+}
+.homecomp__secetitle {
+  margin-top: 1em;
+  margin-left: 48%;
+  color: white;
+  font-size: 2em;
+}
+.group__title {
+  color: white;
+
+  margin-left: 24em;
+  font-size: 24px;
+}

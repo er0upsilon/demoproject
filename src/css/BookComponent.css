@@ -1,0 +1,52 @@
+.bookcontainer {
+  margin-top: 0%;
+  display: inline-flex;
+  width: 12em;
+  background-color: 2px solid blue;
+  margin-left: 3em;
+  margin-right: 3em;
+}
+
+.card {
+  padding: 1em 1em 1em 1em;
+  /* border: 2px solid white; */
+  margin-top: 1em;
+  /* border: 2px solid red; */
+  margin-bottom: 0;
+}
+.card:hover {
+  cursor: pointer;
+}
+.bookcontainer__button {
+  width: 10em;
+  height: 2.5em;
+  font-size: 1em;
+  align-items: center;
+  color: white;
+  background-color: #56baed;
+  border: none;
+  border-radius: 0.2em;
+  /* margin-left: 1em; */
+}
+
+.bookcontainer__button:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.bookcontiner__image {
+  height: 18em;
+  width: 14em;
+  margin-top: -0.5em;
+}
+
+.bookcontainer__title {
+  margin-top: -0.7em;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 10em;
+}
+.bookcontainer__title {
+  color: white;
+}

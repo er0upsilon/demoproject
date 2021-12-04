@@ -1,0 +1,40 @@
+.subtotal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 13em;
+  height: 15em;
+  padding: 20px;
+  background-color: whitesmoke;
+  border: 1px solid white;
+  border-radius: 3px;
+  box-shadow: 5px 5px #888888;
+  margin-top: 5em;
+}
+.subtotal__giftbutton {
+  width: 13em;
+  height: 2.5em;
+  margin-left: 0.4em;
+  font-size: 1em;
+  border: none;
+  box-shadow: 2px 2px #888888;
+}
+.subtotal__gift {
+  display: flex;
+  align-items: center;
+}
+
+.subtotal__gift > input {
+  margin-right: 5px;
+}
+
+.subtotal__button {
+  width: 13em;
+  height: 2.5em;
+  font-size: 1em;
+  align-items: center;
+  color: white;
+  background-color: #56baed;
+  border: none;
+  border-radius: 0.2em;
+}
