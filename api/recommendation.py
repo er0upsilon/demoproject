@@ -49,8 +49,7 @@ def getrecommendation():
 
         scores = list(enumerate(cs[isbn]))
         sorted_scores = sorted(scores, key=lambda x: x[1], reverse=True)
-        sorted_scores = sorted_scores[1:]
-
+        sorted_scores = sorted_scores[1:6]
         j = 0
         print('the most similar to', title, 'are:\n')
         for item in sorted_scores:
@@ -65,7 +64,8 @@ def getrecommendation():
             recommend_list = recommend_list.append(
                 df[df["id"] == isbn_list[i]])
 
-        print(recommend_list)
+        print(recommend_list[['isbn', 'title',
+              'author']])
 
         return recommend_list.to_json(orient='index'), 200
 

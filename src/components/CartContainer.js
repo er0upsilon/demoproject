@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Subtotal from "./Subtotal";
 import "../css/CartContainer.css";
 
-function CartContainer() {
+function CartContainer({ refresh, setRefresh }) {
   const [cartItem, setCartItem] = useState(null);
   const [reload, setReload] = useState(false);
 
@@ -47,6 +47,7 @@ function CartContainer() {
           console.log("successfull");
           setCartItem(null);
           setReload(!reload);
+          setRefresh(!refresh);
         } else {
           console.log(r["errmsg"]);
         }

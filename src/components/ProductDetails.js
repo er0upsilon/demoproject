@@ -4,7 +4,7 @@ import "../css/ProductDetails.css";
 import { BiChevronLeftCircle, BiChevronRightCircle } from "react-icons/bi";
 import { useHistory } from "react-router-dom";
 
-function ProductDetails() {
+function ProductDetails({ refresh, setRefresh }) {
   const location = useLocation();
   const history = useHistory();
   const [volume, setVolume] = useState(1);
@@ -25,7 +25,7 @@ function ProductDetails() {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-        count: 4,
+        count: 5,
         title: title,
       }),
     })
@@ -71,6 +71,7 @@ function ProductDetails() {
       res.json().then((r) => {
         if (res.status === 200) {
           setVolume(1);
+          setRefresh(!refresh);
         } else {
           alert(r["errmsg"]);
         }
@@ -151,7 +152,7 @@ function ProductDetails() {
         {recommendation?.map((book) => (
           <div className="productdetail__recommendationcard">
             <img
-              className="bookcontiner__image"
+              className="recomm__image"
               src={book["image_url"]}
               alt=""
               onClick={bookDetailHandler(book)}

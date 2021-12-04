@@ -22,6 +22,8 @@ function App() {
   const [thrillerList, setThrillerList] = useState(null);
   const [userToken, setUserToken] = useState(null);
   const [countcart, setCountcart] = useState(0);
+  const [refresh, setRefresh] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
     setUserToken(localStorage.getItem("userToken"));
     fetch("/books/gettopbooks?count=5")
@@ -136,38 +138,39 @@ function App() {
             <NavBarComponent
               userToken={userToken}
               setUserToken={setUserToken}
-              countcart={countcart}
-              setCountcart={setCountcart}
+              refresh={refresh}
+              setRefresh={setRefresh}
             />
-            <CartContainer />
+            <CartContainer refresh={refresh} setRefresh={setRefresh} />
             <Footer />
           </Route>
           <Route path="/productdetails">
             <NavBarComponent
               userToken={userToken}
               setUserToken={setUserToken}
-              countcart={countcart}
-              setCountcart={setCountcart}
+              refresh={refresh}
+              setRefresh={setRefresh}
             />
-            <ProductDetails />
+            <ProductDetails refresh={refresh} setRefresh={setRefresh} />
             <Footer />
           </Route>
           <Route path="/searchresult">
             <NavBarComponent
               userToken={userToken}
               setUserToken={setUserToken}
-              countcart={countcart}
-              setCountcart={setCountcart}
+              refresh={refresh}
+              setRefresh={setRefresh}
             />
             <SearchResult />
             <Footer />
+            Quantity:15 Price:734 SubTotal: 734 x 15 =11010
           </Route>
           <Route path="/purchasehistory">
             <NavBarComponent
               userToken={userToken}
               setUserToken={setUserToken}
-              countcart={countcart}
-              setCountcart={setCountcart}
+              refresh={refresh}
+              setRefresh={setRefresh}
             />
             <PurchaseHistory />
             <Footer />
@@ -179,6 +182,8 @@ function App() {
             <NavBarComponent
               countcart={countcart}
               setCountcart={setCountcart}
+              refresh={refresh}
+              setRefresh={setRefresh}
             />
             <HomeComponent
               topList={topList}

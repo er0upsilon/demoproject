@@ -5,11 +5,11 @@ import { useHistory, Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { BiHistory } from "react-icons/bi";
 
-const NavBarComponent = ({ countCart, setCountcart }) => {
+const NavBarComponent = ({ refresh, setRefresh }) => {
   const [username, setUsername] = useState("");
   const [searchTitle, setSearchTitle] = useState("");
   const history = useHistory();
-
+  const [countCart, setCountcart] = useState(0);
   const searchHandler = (e) => {
     let searchData = null;
     e.preventDefault();
@@ -66,8 +66,26 @@ const NavBarComponent = ({ countCart, setCountcart }) => {
           console.log(data);
           setUsername(data["username"]);
         });
+      fetch("/profile/cart", {
+        method: "GET",
+        headers: {
+          Authorization: "Bearer " + userToken,
+        },
+      }).then((res) => {
+        res.json().then((r) => {
+          if (res.status === 200) {
+            console.log(res);
+            console.log(r);
+            const result = r ? Object.values(r) : null;
+            console.log(result?.length);
+            setCountcart(result?.length);
+          } else {
+            console.log(r["errmsg"]);
+          }
+        });
+      });
     }
-  }, []);
+  }, [refresh]);
 
   return (
     <div className="navbar">

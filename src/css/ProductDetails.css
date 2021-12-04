@@ -111,12 +111,12 @@
 .productdetail__recommendation {
   display: flex;
   padding: 1em 1em 1em 1em;
-  margin-left: 2.2em;
+  margin-left: 1em;
   margin-top: 4em;
 }
 .productdetail__recommendationcard {
   justify-content: space-between;
-  margin-left: 2em;
+  margin-left: 1.4em;
   margin-right: 2em;
   margin-bottom: 2em;
 }
@@ -137,4 +137,8 @@
 }
 .productdetails__icon {
   color: white;
+}
+.recomm__image {
+  height: 14em;
+  width: 12em;
 }
