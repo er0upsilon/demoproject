@@ -24,7 +24,7 @@ function App() {
   const [countcart, setCountcart] = useState(0);
   useEffect(() => {
     setUserToken(localStorage.getItem("userToken"));
-    fetch("/books/gettopbooks?count=4")
+    fetch("/books/gettopbooks?count=5")
       .then((res) => {
         console.log(res);
         return res.json();
@@ -47,7 +47,7 @@ function App() {
         console.log(data);
         setCountcart(data["count"]);
       });
-    fetch("/books/getmostpopular?count=4")
+    fetch("/books/getmostpopular?count=5")
       .then((res) => {
         console.log(res);
         return res.json();
@@ -58,7 +58,7 @@ function App() {
         setPopularList(result);
       });
 
-    fetch("/books/gettopfiction?count=4")
+    fetch("/books/gettopfiction?count=5")
       .then((res) => {
         console.log(res);
         return res.json();
@@ -69,7 +69,7 @@ function App() {
         setFictionList(result);
       });
 
-    fetch("/books/gettopromance?count=6")
+    fetch("/books/gettopromance?count=5")
       .then((res) => {
         console.log(res);
         return res.json();
@@ -80,7 +80,7 @@ function App() {
         setRomanceList(result);
       });
 
-    fetch("/books/gettophorror?count=6")
+    fetch("/books/gettophorror?count=5")
       .then((res) => {
         console.log(res);
         return res.json();
@@ -91,7 +91,7 @@ function App() {
         setHorrorList(result);
       });
 
-    fetch("/books/gettopmystery?count=6")
+    fetch("/books/gettopmystery?count=5")
       .then((res) => {
         console.log(res);
         return res.json();
@@ -102,7 +102,7 @@ function App() {
         setMysteryList(result);
       });
 
-    fetch("/books/gettopthriller?count=6")
+    fetch("/books/gettopthriller?count=5")
       .then((res) => {
         console.log(res);
         return res.json();
@@ -113,7 +113,7 @@ function App() {
         setThrillerList(result);
       });
 
-    fetch("/books/gettopscifi?count=6")
+    fetch("/books/gettopscifi?count=5")
       .then((res) => {
         console.log(res);
         return res.json();
@@ -177,8 +177,6 @@ function App() {
           </Route>
           <Route path="/">
             <NavBarComponent
-              userToken={userToken}
-              setUserToken={setUserToken}
               countcart={countcart}
               setCountcart={setCountcart}
             />

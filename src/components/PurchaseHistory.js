@@ -42,27 +42,24 @@ function PurchaseHistory() {
                 />
                 <div className="purchase__itemstitle">
                   {book["title"]}
-                  <div className="purchase__itemsbtn">
-                    {/* {
-
-                      date = new Date(book["date"]);} */}
+                  <div className="purchase__itemsquantity">
+                    Quantity:{book["count"]}
                   </div>
                 </div>
 
-                <div className="purchase__itemsquantity">
-                  Quantity:{book["count"]}
-                </div>
                 <div className="purchase__itemsprice">
                   Price:{book["price"]}
-                  SubTotal: {book["price"]} x {book["count"]} =
-                  {parseInt(book["count"]) * parseInt(book["price"])}
+                  <div className="purchase_itemsub">
+                    SubTotal: {book["price"]} x {book["count"]} =
+                    {parseInt(book["count"]) * parseInt(book["price"])}
+                  </div>
                 </div>
               </div>
             ))}
           </div>
         ) : (
           <div>
-            <p className="subtotal__errmsg">not ordered anything</p>
+            <p className="subtotal__errmsg">not purchased anything</p>
           </div>
         )}
       </div>

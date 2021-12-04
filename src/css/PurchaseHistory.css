@@ -13,7 +13,6 @@
   width: 70%;
   float: center;
   height: auto;
-
   margin-left: 4.4em;
   margin-top: 3em;
   background-color: whitesmoke;
@@ -21,20 +20,23 @@
   border-radius: 3px;
 }
 .purchase__image {
-  height: 8em;
-  width: 6em;
-  padding-left: 0.7em;
+  height: 10em;
+  width: 8em;
+  padding-left: 1em;
   margin-top: -0.15em;
   margin-bottom: 0.5em;
   padding-top: 0.8em;
+  margin-left: 2em;
 }
 .purchase__items {
   display: flex;
   margin-top: 1em;
   padding-top: 0.5em;
-  /* border: 2px solid yellow; */
-  height: 10em;
+  border: 1px solid white;
+  height: 12em;
   margin-bottom: 0%;
+  width: 80%;
+  margin-left: 2em;
 }
 .purchase__itemsprice {
   margin-left: 9em;
@@ -54,8 +56,37 @@
   padding-left: 0.7em;
   font-family: serif;
   padding-top: 1em;
+  color: white;
 }
 
 .purchase__itemsquantity {
   padding-top: 1em;
+}
+.PurchaseHistory {
+  background-color: black;
+  margin-top: 1px;
+  border: 1px solid black;
+  height: 50em;
+}
+.PurchaseHistory__title {
+  color: white;
+  margin-left: 3em;
+}
+.purchase__itemsquantity {
+  color: white;
+  margin-top: 1em;
+  margin-right: 40em;
+}
+.purchase__itemsprice {
+  color: white;
+  margin-top: -1px;
+}
+.subtotal__errmsg {
+  color: white;
+}
+.purchase__itemstitle {
+  color: white;
+}
+.purchase_itemsub {
+  margin-top: 2em;
 }

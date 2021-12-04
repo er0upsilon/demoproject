@@ -28,20 +28,22 @@ function SearchResult() {
     <div className="search__container">
       {recommendation ? (
         <div>
-          <div className="search title">Search result on "{title}":</div>
+          <div className="search__title">Search result on "{title}":</div>
           {recommendation.map((book) => (
-            <div className="card">
-              <img
-                className="bookcontiner__image"
-                src={book["image_url"]}
-                alt=""
-                onClick={bookDetailHandler(book)}
-              />
-              <div
-                className="bookcontainer__title"
-                onClick={bookDetailHandler(book)}
-              >
-                <p>{book["title"]}</p>
+            <div className="search_card">
+              <div className="search__items">
+                <img
+                  className="searchresult__image"
+                  src={book["image_url"]}
+                  alt=""
+                  onClick={bookDetailHandler(book)}
+                />
+                <div
+                  className="bookcontainer__title"
+                  onClick={bookDetailHandler(book)}
+                >
+                  <p>{book["title"]}</p>
+                </div>
 
                 <p className="bookcontainer__price">NRP. {book["price"]}</p>
               </div>

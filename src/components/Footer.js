@@ -12,19 +12,11 @@ function Footer() {
         <div className="footer-about">
           <h1 className="footer__h1">About</h1>
           <p className="footer__p1">
-            BooksMandala is an online bookstore, physically based in Pokhara,
-            Nepal, with an aim to create the largest community of book readers
-            in Nepal.News and events At Booksmandala, you can browse and buy
-            books online at the lowest everyday prices
+            The BOOKSTORE is a one-stop solution for all your books need, where
+            you can browse through thousands of books. With an aim to create the
+            largest community of book readers in Nepal, we have included many
+            features like: dyanamic recommendation etc.
           </p>
-        </div>
-        <div className="footer-links">
-          <h1 className="footer__h1links">quick links</h1>
-          <p className="footer__p1links">paragraph</p>
-        </div>
-        <div className="footer-subscribe">
-          <h1 className="footer__h1suscribe">Subscribe</h1>
-          <p className="footer__p1suscribe">paragraph</p>
         </div>
       </div>
       <div className="second__line">

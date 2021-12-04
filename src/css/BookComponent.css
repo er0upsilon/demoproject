@@ -2,17 +2,15 @@
   margin-top: 0%;
   display: inline-flex;
   width: 12em;
-  background-color: 2px solid blue;
   margin-left: 3em;
-  margin-right: 3em;
 }
 
 .card {
-  padding: 1em 1em 1em 1em;
   /* border: 2px solid white; */
   margin-top: 1em;
-  /* border: 2px solid red; */
+
   margin-bottom: 0;
+  padding: 0;
 }
 .card:hover {
   cursor: pointer;
@@ -35,8 +33,8 @@
 }
 
 .bookcontiner__image {
-  height: 18em;
-  width: 14em;
+  height: 16em;
+  width: 12em;
   margin-top: -0.5em;
 }
 

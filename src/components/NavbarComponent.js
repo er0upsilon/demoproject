@@ -73,12 +73,7 @@ const NavBarComponent = ({ countCart, setCountcart }) => {
     <div className="navbar">
       <Link to="/" className="link">
         <div className="navbar__intro">
-          <img
-            className="navbar__logo"
-            src="https://svgsilh.com/svg/1294676.svg"
-            alt=""
-          />
-          <span className="navbar__title">TITLE </span>
+          <span className="navbar__title">THE BOOKSTORE</span>
         </div>
       </Link>
       <div className="navbar__serach">
@@ -121,8 +116,8 @@ const NavBarComponent = ({ countCart, setCountcart }) => {
         </Link>
 
         <Link to={username && "/purchasehistory"} className="link">
-          <div className="navbar__option">
-            <BiHistory className="basket__logo" size={30} />
+          <div className="navbar__optionhis">
+            <BiHistory className="history__logo" size={30} />
           </div>
         </Link>
       </div>

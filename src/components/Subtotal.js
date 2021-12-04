@@ -61,9 +61,9 @@ function Subtotal({ reload, setReload }) {
           <CurrencyFormat
             renderText={(value) => (
               <>
-                <p>
+                <div className="subtotal_items">
                   Total ({cartItem?.length} items): <strong>{value}</strong>
-                </p>
+                </div>
                 <div className="subtotal__gift" onClick={handleChange}>
                   {checked ? (
                     <p className="subtotal__info">+ NRS 15 for gift wrapper </p>

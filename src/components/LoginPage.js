@@ -59,7 +59,7 @@ function LoginPage() {
           <input type="submit" class="fadeIn fourth" value="Log In"></input>
         </form>
         <Link to="/register">
-          <button type="button" class="reg">
+          <button type="button" class="reg_login">
             Register
           </button>
         </Link>

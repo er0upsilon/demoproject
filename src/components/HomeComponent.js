@@ -41,7 +41,7 @@ function HomeComponent({
           ))}
 
           <div className="homecomp__group">
-            <p className="group__title">Top Selling</p>
+            <p className="group__title">Most Popular</p>
           </div>
           {popularList.map((book) => (
             <BookContainer
@@ -56,6 +56,39 @@ function HomeComponent({
               price={parseInt(book["price"])}
             />
           ))}
+          <div className="homecomp__group">
+            <p className="group__title">Top Horror</p>
+          </div>
+          {horrorList.map((book) => (
+            <BookContainer
+              id={book["isbn"]}
+              author={book["author"]}
+              description={book["description"]}
+              title={book["title"]}
+              page={book["page"]}
+              genre={book["genre"]}
+              image={book["image_url"]}
+              rating={book["rating"]}
+              price={parseInt(book["price"])}
+            />
+          ))}
+          <div className="homecomp__group">
+            <p className="group__title">Top Thriller</p>
+          </div>
+          {thrillerList.map((book) => (
+            <BookContainer
+              id={book["isbn"]}
+              author={book["author"]}
+              description={book["description"]}
+              title={book["title"]}
+              page={book["page"]}
+              genre={book["genre"]}
+              image={book["image_url"]}
+              rating={book["rating"]}
+              price={parseInt(book["price"])}
+            />
+          ))}
+          <div className="nothing">.</div>
         </div>
       ) : (
         <h1>Loading...</h1>

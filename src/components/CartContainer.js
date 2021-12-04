@@ -77,11 +77,13 @@ function CartContainer() {
               </div>
               <div className="cart__itemsquantity">
                 Quantity:{book["count"]}
-              </div>
-              <div className="cart__itemsprice">
-                Price:{book["price"]}
-                SubTotal: {book["price"]} x {book["count"]} =
-                {parseInt(book["count"]) * parseInt(book["price"])}
+                <div className="cart__itemsprice">
+                  Price:{book["price"]}
+                  <div className="cart_subtotal">
+                    SubTotal: {book["price"]} x {book["count"]} =
+                    {parseInt(book["count"]) * parseInt(book["price"])}
+                  </div>
+                </div>
               </div>
             </div>
           ))}

@@ -5,19 +5,22 @@
   width: 13em;
   height: 15em;
   padding: 20px;
-  background-color: whitesmoke;
-  border: 1px solid white;
+  background-color: black;
+  border: 1px solid #eee;
   border-radius: 3px;
-  box-shadow: 5px 5px #888888;
   margin-top: 5em;
 }
 .subtotal__giftbutton {
-  width: 13em;
+  width: 14em;
   height: 2.5em;
   margin-left: 0.4em;
   font-size: 1em;
   border: none;
-  box-shadow: 2px 2px #888888;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  background-color: #56baed;
+  color: white;
+  border-radius: 2px;
 }
 .subtotal__gift {
   display: flex;
@@ -37,4 +40,8 @@
   background-color: #56baed;
   border: none;
   border-radius: 0.2em;
+  margin-left: 2px;
+}
+.subtotal_items {
+  color: white;
 }

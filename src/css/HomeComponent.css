@@ -1,7 +1,7 @@
 .homeContainer {
   margin-top: 2px;
   width: 98%;
-  height: 64em;
+  height: auto;
   padding-left: 2%;
   background-color: black;
   display: flex;
@@ -27,4 +27,7 @@
 
   margin-left: 24em;
   font-size: 24px;
+}
+.nothing {
+  margin-top: 3em;
 }

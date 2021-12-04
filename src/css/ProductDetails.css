@@ -16,7 +16,7 @@
 .productdetails__image {
   width: 18em;
   height: 25em;
-  box-shadow: 5px 10px #888888;
+  box-shadow: 2px 2px #888888;
 }
 .productdetails__info {
   width: 75%;
@@ -76,7 +76,7 @@
   padding-top: 6em;
   height: 11em;
   width: 12em;
-  box-shadow: 5px 10px #888888;
+  box-shadow: 2px 2px #888888;
 }
 
 .productdetails__infoprice {
